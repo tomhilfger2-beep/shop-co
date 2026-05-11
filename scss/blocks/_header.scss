@@ -1,0 +1,142 @@
+
+.shop-header {
+    width: 100%;
+    border-bottom: 1px solid #eee;
+    background: #fff;
+
+    .shop-container {
+        max-width: 1240px;
+        margin: 0 auto;
+        padding: 16px;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+
+    .shop-left {
+        display: flex;
+        align-items: center;
+        gap: 16px;
+    }
+
+    .shop-logo {
+        font-size: 24px;
+        font-weight: 800;
+    }
+
+    .shop-nav {
+        display: flex;
+        gap: 24px;
+
+        a {
+            text-decoration: none;
+            color: #000;
+            font-size: 14px;
+        }
+    }
+
+
+    .shop-search {
+        input {
+            width: 300px;
+            padding: 10px 16px;
+            border-radius: 25px;
+            border: none;
+            background: #f3f3f3;
+            outline: none;
+        }
+    }
+
+    .shop-right {
+        display: flex;
+        align-items: center;
+        gap: 20px;
+    }
+
+    .shop-icons {
+        display: flex;
+        gap: 12px;
+        font-size: 18px;
+        cursor: pointer;
+    }
+
+    .shop-burger {
+        display: none;
+        flex-direction: column;
+        gap: 4px;
+        background: none;
+        border: none;
+        cursor: pointer;
+
+        span {
+            width: 22px;
+            height: 2px;
+            background: #000;
+            transition: 0.3s;
+        }
+
+        &.active {
+            span:nth-child(1) {
+                transform: rotate(45deg) translate(5px, 5px);
+            }
+
+            span:nth-child(2) {
+                opacity: 0;
+            }
+
+            span:nth-child(3) {
+                transform: rotate(-45deg) translate(5px, -5px);
+            }
+        }
+    }
+}
+
+@media (max-width: 1024px) {
+    .shop-search input {
+        width: 200px;
+    }
+}
+
+@media (max-width: 768px) {
+    .shop-burger {
+        display: flex !important;
+        z-index: 1001;
+    }
+
+    .shop-nav {
+        position: fixed;
+        top: 0;
+        left: 0;
+        height: 100vh;
+        width: 260px;
+        background: #fff;
+        flex-direction: column;
+        align-items: flex-start;
+        padding: 80px 20px;
+        gap: 20px;
+        transform: translateX(-100%);
+        transition: 0.35s ease;
+
+        &.active {
+            transform: translateX(0);
+        }
+    }
+
+    .shop-search {
+        display: none;
+    }
+
+    .shop-overlay {
+        position: fixed;
+        inset: 0;
+        background: rgba(0, 0, 0, 0.3);
+        opacity: 0;
+        pointer-events: none;
+        transition: 0.3s;
+
+        &.active {
+            opacity: 1;
+            pointer-events: auto;
+        }
+    }
+}

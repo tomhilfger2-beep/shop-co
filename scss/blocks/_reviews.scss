@@ -1,0 +1,93 @@
+.review {
+    &__btn {
+        padding: 13px 16px;
+        border-radius: 62px;
+        border: none;
+        background-color: black;
+        color: white;
+    }
+
+    &__info {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+
+    &__img {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+
+
+
+    &__text {
+        display: flex;
+        align-items: center;
+    }
+
+    &__comments {
+        color: gray;
+    }
+
+    &__cards {
+        border: 2px solid rgba(0, 0, 0, 0.1);
+        padding: 20px;
+        border-radius: 20px;
+    }
+
+    &__nuqta {
+        color: white;
+    }
+
+}
+
+@include table() {
+    .review {
+
+        &__bigcard {
+            display: flex;
+            gap: 15px;
+        }
+
+        &__bigcards {
+            display: flex;
+            top: 10px;
+            left: -14px;
+            position: relative;
+            gap: 15px;
+        }
+
+        &__cards {
+            width: 700px;
+            border: 2px solid rgba(0, 0, 0, 0.1);
+            padding: 20px;
+            border-radius: 20px;
+        }
+    }
+}
+
+@include desktob() {
+    .review {
+
+        &__bigcard {
+            display: flex;
+            gap: 15px;
+        }
+
+        &__bigcards {
+            display: flex;
+            top: 10px;
+            left: -14px;
+            position: relative;
+            gap: 15px;
+        }
+
+        &__cards {
+            width: 700px;
+            border: 2px solid rgba(0, 0, 0, 0.1);
+            padding: 20px;
+            border-radius: 20px;
+        }
+    }
+}

@@ -1,0 +1,279 @@
+.hero {
+    background-color: rgba(242, 240, 241, 1);
+    position: relative;
+    overflow: hidden;
+
+ 
+
+    &__btn {
+        padding: 15px 121px;
+        background-color: rgba(0, 0, 0, 1);
+        border-radius: 62px;
+        border: none;
+        color: white;
+    }
+
+    &__img {
+        display: none;
+    }
+
+    &__yulduz {
+        display: none;
+    }
+
+    &__yulduz-two {
+        display: none;
+    }
+
+    &__International {
+        position: relative;
+        bottom: 20px;
+
+    }
+
+    &__shop {
+        display: none;
+    }
+
+    &__box {
+        height: 90px;
+        background-color: #d3d3d3;
+    }
+
+
+
+    &__info {
+        text-align: center;
+        display: flex;
+        align-items: center;
+        gap: 10px;
+    }
+
+    &__black {
+        display: none;
+    }
+
+    &__black-two {
+        display: none;
+    }
+
+
+    &__HappyCustomers {
+        text-align: center;
+        align-items: center;
+        justify-content: center;
+    }
+
+
+    &__star {
+        position: relative;
+        bottom: 380px;
+        left: 260px;
+    }
+
+
+    &__star-two {
+        position: relative;
+        bottom: 315px;
+        right: 42px;
+    }
+
+    
+
+    &__some {
+        display: none;
+    }
+
+    &__boy {
+        display: none;
+    }
+
+    &__yulduz {
+        display: none;
+    }
+
+    &__yulduz-two {
+        display: none;
+    }
+
+}
+
+@include table() {
+    .hero {
+        background-color: rgb(195, 193, 193);
+
+        &__title {
+            display: none;
+        }
+
+        &__black {
+            display: none;
+        }
+
+        &__black-two {
+            display: none;
+        }
+
+
+
+        &__shop {
+            display: block;
+            position: relative;
+            bottom: 240px;
+            padding: 12px 24px;
+            border-radius: 100px;
+            border: 2px solid gray;
+        }
+
+        &__desk {
+            display: none;
+        }
+
+        &__some {
+            display: block;
+            padding-top: 60px;
+        }
+
+        &__model {
+            display: none;
+        }
+
+        &__minicard {
+            background-color: white;
+            border-radius: 20px;
+            padding: 15px;
+            height: 409px;
+            position: relative;
+            top: 20px;
+        }
+
+        &__boy {
+            display: block;
+            width: 220px;
+            bottom: 150px;
+            position: relative;
+            left: 450px;
+            border-radius: 30px;
+
+        }
+
+        &__star {
+            display: none;
+        }
+
+        &__star-two {
+            display: none;
+        }
+
+
+        &__yulduz {
+            display: none;
+        }
+
+        &__yulduz-two {
+            display: none;
+        }
+
+        &__star {
+            display: none;
+        }
+
+        &__star-two {
+            display: none;
+        }
+
+    }
+
+
+}
+
+
+@include desktob() {
+    .hero {
+        background-color: rgba(242, 240, 241, 1);
+
+        &__word {
+            display: flex;
+            gap: 20px;
+            top: 50px;
+        }
+
+        &__black {
+            display: block;
+            position: relative;
+            bottom: 400px;
+            left: 1080px;
+        }
+
+        &__black-two {
+            display: block;
+            position: relative;
+            bottom: 370px;
+            left: 660px;
+        }
+
+
+        &__desk {
+            position: relative;
+            display: block;
+
+        }
+
+        &__minicard {
+            display: none;
+        }
+
+        &__HappyCustomers {
+            text-align: center;
+            align-items: center;
+            justify-content: center;
+            font-size: 26px;
+            font-weight: 700;
+        }
+
+        &__International {
+            position: relative;
+            bottom: 20px;
+            font-size: 16px;
+            font-weight: 700;
+            color: rgba(0, 0, 0, 0.6);
+        }
+
+
+        &__some {
+            display: none;
+        }
+
+        &__box {
+            display: none;
+        }
+
+        &__model {
+            display: none;
+        }
+
+        &__star {
+            display: none;
+        }
+
+        &__star-two {
+            display: none;
+        }
+
+        &__browse {
+            display: block;
+        }
+
+        &__title {
+            display: block;
+        }
+
+        &__img {
+            display: block;
+            position: absolute;
+            left: 830px;
+            bottom: 76px;
+        }
+
+    }
+}

@@ -1,0 +1,78 @@
+.style {
+    background-color: rgb(227, 227, 227);
+    padding: 10px;
+
+    &__info {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-size: 42px;
+    }
+
+    &__formal {
+        display: none;
+    }
+
+
+    &__Information {
+        display: none;
+    }
+
+}
+
+@include table() {
+    .style {
+        &__gym {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 30px;
+        }
+
+        &__party {
+            margin-top: 20px;
+        }
+
+        &__formal {
+            display: none;
+        }
+
+    }
+}
+
+
+@include desktob() {
+    .style {
+        &__info {
+            display: none;
+        }
+
+        &__gym {
+            display: none;
+        }
+
+        &__party {
+            display: none;
+        }
+
+
+        &__Information {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 42px
+        }
+
+        &__formal {
+            gap: 10px; 
+            display: flex;
+        }
+
+
+        &__Casual{
+            position: relative;
+            bottom: 8px;
+        }
+
+    }
+}

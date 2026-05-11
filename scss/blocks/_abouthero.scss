@@ -1,0 +1,162 @@
+.aboutcard {
+  margin-top: 40px;
+
+  &__wrapper {
+    display: flex;
+    gap: 40px;
+    flex-wrap: wrap;
+  }
+
+  &__gallery {
+    display: flex;
+    gap: 15px;
+  }
+
+  &__thumbs {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+
+    img {
+      width: 80px;
+      height: 80px;
+      border-radius: 10px;
+      cursor: pointer;
+      transition: 0.3s;
+
+      &:hover {
+        transform: scale(1.1);
+        border: 2px solid #000;
+      }
+    }
+  }
+
+  &__main img {
+    width: 350px;
+    border-radius: 15px;
+
+    &:hover {
+      transform: scale(1.03);
+    }
+  }
+
+  &__info {
+    max-width: 400px;
+  }
+
+  &__title {
+    font-size: 28px;
+    font-weight: 800;
+  }
+
+  &__rating {
+    color: orange;
+    margin: 10px 0;
+  }
+
+  &__price {
+    display: flex;
+    gap: 10px;
+    margin-bottom: 15px;
+
+    .old {
+      text-decoration: line-through;
+      color: #aaa;
+    }
+
+    .sale {
+      background: #ffe5e5;
+      color: red;
+      padding: 3px 8px;
+      border-radius: 10px;
+      font-size: 12px;
+    }
+  }
+
+  &__color-list span {
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    display: inline-block;
+    margin-right: 10px;
+    cursor: pointer;
+
+    &:nth-child(1) {
+      background: #6b5e3b;
+    }
+
+    &:nth-child(2) {
+      background: #1f3d3b;
+    }
+
+    &:nth-child(3) {
+      background: #2c2f4a;
+    }
+
+    &.active {
+      border: 3px solid #000;
+    }
+  }
+
+  &__size-list button {
+    padding: 8px 15px;
+    border-radius: 20px;
+    border: none;
+    background: #eee;
+
+    &.active {
+      background: #000;
+      color: #fff;
+    }
+  }
+
+  &__cart {
+    display: flex;
+    gap: 15px;
+    margin-top: 15px;
+  }
+
+  &__btn {
+    flex: 1;
+    background: #000;
+    color: #fff;
+    border-radius: 30px;
+    padding: 12px;
+  }
+
+  &__tabs {
+    margin-top: 40px;
+    display: flex;
+    justify-content: space-around;
+    border-top: 1px solid #ddd;
+    padding-top: 15px;
+
+    .active {
+      border-bottom: 2px solid #000;
+    }
+  }
+}
+
+@media (max-width: 768px) {
+  .aboutcard {
+    &__wrapper {
+      flex-direction: column;
+    }
+
+    &__gallery {
+      flex-direction: column;
+    }
+
+    &__thumbs {
+      flex-direction: row;
+    }
+
+    &__main img {
+      width: 100%;
+    }
+
+    &__cart {
+      flex-direction: column;
+    }
+  }
+}

@@ -1,0 +1,250 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Category Page</title>
+    <link rel="stylesheet" href="./styles/style.css">
+</head>
+
+<body>
+    <header class="shop-header">
+        <div class="shop-overlay" id="overlay"></div>
+        <div class="shop-container">
+            <div class="shop-left">
+                <button class="shop-burger" id="burgerBtn">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
+                <a href="#">
+                    <h1 class="shop-logo">SHOP.CO</h1>
+                </a>
+            </div>
+            <div class="shop-search">
+                <input type="text" placeholder="Search for products..." />
+            </div>
+            <nav class="shop-nav" id="navMenu">
+                <a href="#">Shop</a>
+                <a href="#onsale">On Sale</a>
+                <a href="./categorycard.html">Category Page</a>
+                <a href="#subscribe">Subscribe</a>
+            </nav>
+
+            <div class="shop-right">
+
+                <div class="shop-icons">
+                    <a href="./cart.html"> <span>🛒</span></a>
+                    <span>👤</span>
+                </div>
+            </div>
+        </div>
+    </header>
+    <main>
+        <section class="shop" id="onsale">
+            <div class="container">
+                <div class="shop__wrapper">
+
+                    <aside class="shop__sidebar">
+                        <h3>Filters</h3>
+
+                        <div class="shop__filter">
+                            <p>T-shirts</p>
+                            <p>Shorts</p>
+                            <p>Shirts</p>
+                            <p>Hoodie</p>
+                            <p>Jeans</p>
+                        </div>
+
+                        <div class="shop__price">
+                            <p>Price</p>
+                            <input type="range">
+                        </div>
+
+                        <div class="shop__colors">
+                            <span></span><span></span><span></span>
+                            <span></span><span></span><span></span>
+                        </div>
+
+                        <div class="shop__sizes">
+                            <button>Small</button>
+                            <button class="active">Large</button>
+                            <button>X-Large</button>
+                        </div>
+
+                        <button class="shop__apply">Apply Filter</button>
+                    </aside>
+
+                    <div class="shop__content">
+
+                        <div class="shop__top">
+                            <h2>Casual</h2>
+                            <p>Showing 1-10 of 100 Products</p>
+                        </div>
+
+                        <div class="shop__grid">
+
+                            <div class="shop__card">
+                                <img src="./assets/icons/Frame 33 (2).png" alt="">
+                                <h4>Gradient Graphic T-shirt</h4>
+                                <div class="stars">⭐⭐⭐⭐☆</div>
+                                <div class="price">
+                                    <span>$145</span>
+                                    <del>$242</del>
+                                </div>
+                            </div>
+
+                            <div class="shop__card">
+                                <img src="./assets/icons/pushti kiym.png" alt="">
+                                <h4>Polo with Tipping</h4>
+                                <div class="stars">⭐⭐⭐⭐⭐</div>
+                                <div class="price">
+                                    <span>$180</span>
+                                    <del>$242</del>
+                                </div>
+                            </div>
+
+                            <div class="shop__card">
+                                <img src="./assets/icons/Frame 38 (2).png" alt="">
+                                <h4>Black Striped T-shirt</h4>
+                                <div class="stars">⭐⭐⭐⭐☆</div>
+                                <div class="price">
+                                    <span>$120</span>
+                                    <del>$150</del>
+                                </div>
+                            </div>
+                            <div class="shop__card">
+                                <img src="./assets/imgs/Frame 33 (1).png" alt="">
+                                <h4>SKINNY FIT JEANS</h4>
+                                <div class="stars">⭐⭐⭐⭐⭐</div>
+                                <div class="price">
+                                    <span>$240</span>
+                                    <del>$260</del>
+                                </div>
+                            </div>
+
+                            <div class="shop__card">
+                                <img src="./assets/imgs/Frame 34.png" alt="">
+                                <h4>CHECKERED SHIRT</h4>
+                                <div class="stars">⭐⭐⭐⭐☆</div>
+                                <div class="price">
+                                    <span>$180</span>
+                                </div>
+                            </div>
+                            <div class="shop__card">
+                                <img src="./assets/imgs/Frame 38.png" alt="">
+                                <h4>SLEEVE STRIPED T-SHIRT</h4>
+                                <div class="stars">⭐⭐⭐⭐☆</div>
+                                <div class="price">
+                                    <span>$130</span>
+                                    <del>$160</del>
+                                </div>
+                            </div>
+
+
+                        </div>
+
+                        <div class="shop__pagination">
+                            <button>Previous</button>
+                            <span class="active">1</span>
+                            <span>2</span>
+                            <span>3</span>
+                            <button>Next</button>
+                        </div>
+
+                    </div>
+
+                </div>
+            </div>
+        </section>
+        <section class="subscribe" id="subscribe">
+            <div class="container">
+                <div class="subscribe__wrapper">
+
+                    <div class="subscribe__left">
+                        <h2>STAY UPTO DATE ABOUT<br>OUR LATEST OFFERS</h2>
+                    </div>
+                    <div class="subscribe__right">
+                        <input type="password" name="text" class="input" placeholder="Enter your email address">
+                        <button class="button">
+                            Subscribe to Newsletter
+                        </button>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+    </main>
+    <footer class="footer">
+        <div class="container">
+            <div class="footer__wrapper">
+
+                <div class="footer__left">
+                    <h2 class="footer__logo">SHOP.CO</h2>
+                    <p class="footer__desc">
+                        We have clothes that suits your style and which you’re proud to wear.
+                        From women to men.
+                    </p>
+
+                    <div class="footer__socials">
+                        <img src="./assets/icons/1 (1).png" alt="twitter">
+                        <img src="./assets/icons/2.png" alt="facebook">
+                        <img src="./assets/icons/3.png" alt="instagram">
+                        <img src="./assets/icons/4.png" alt="github">
+                    </div>
+                </div>
+
+                <div class="footer__links">
+
+                    <div class="footer__col">
+                        <h4>COMPANY</h4>
+                        <a href="#">About</a>
+                        <a href="#">Features</a>
+                        <a href="#">Works</a>
+                        <a href="#">Career</a>
+                    </div>
+
+                    <div class="footer__col">
+                        <h4>HELP</h4>
+                        <a href="#">Customer Support</a>
+                        <a href="#">Delivery Details</a>
+                        <a href="#">Terms & Conditions</a>
+                        <a href="#">Privacy Policy</a>
+                    </div>
+
+                    <div class="footer__col">
+                        <h4>FAQ</h4>
+                        <a href="#">Account</a>
+                        <a href="#">Manage Deliveries</a>
+                        <a href="#">Orders</a>
+                        <a href="#">Payments</a>
+                    </div>
+
+                    <div class="footer__col">
+                        <h4>RESOURCES</h4>
+                        <a href="#">Free eBooks</a>
+                        <a href="#">Development Tutorial</a>
+                        <a href="#">How to - Blog</a>
+                        <a href="#">Youtube Playlist</a>
+                    </div>
+
+                </div>
+            </div>
+
+            <div class="footer__bottom">
+                <p>Shop.co © 2000-2023, All Rights Reserved</p>
+
+                <div class="footer__payments">
+                    <img src="./assets/icons/Badge.png" alt="visa">
+                    <img src="./assets/icons/Badge (1).png" alt="mastercard">
+                    <img src="./assets/icons/Badge (2).png" alt="paypal">
+                    <img src="./assets/icons/Badge (3).png" alt="applepay">
+                    <img src="./assets/icons/Badge (4).png" alt="gpay">
+                </div>
+            </div>
+        </div>
+    </footer>
+</body>
+
+</html>

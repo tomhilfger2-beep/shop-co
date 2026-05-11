@@ -1,0 +1,209 @@
+.shop {
+    background: #e6e5e5;
+    margin-top: 40px;
+
+    &__wrapper {
+        display: flex;
+        gap: 30px;
+    }
+
+    &__sidebar {
+        width: 350px;
+        height: 540px;
+        background: #f7f7f7;
+        padding: 20px;
+        border-radius: 15px;
+        position: relative;
+        top: 100px;
+
+        h3 {
+            margin-bottom: 15px;
+        }
+    }
+
+    &__filter p {
+        margin: 8px 0;
+        cursor: pointer;
+        transition: 0.3s;
+
+        &:hover {
+            color: #000;
+            transform: translateX(5px);
+        }
+    }
+
+    &__price {
+        margin: 20px 0;
+
+        input {
+            width: 100%;
+        }
+    }
+
+    &__colors {
+        display: flex;
+        gap: 8px;
+        margin-bottom: 15px;
+
+        span {
+            width: 20px;
+            height: 20px;
+            border-radius: 50%;
+            cursor: pointer;
+
+            &:nth-child(1) {
+                background: red;
+            }
+
+            &:nth-child(2) {
+                background: green;
+            }
+
+            &:nth-child(3) {
+                background: yellow;
+            }
+
+            &:nth-child(4) {
+                background: orange;
+            }
+
+            &:nth-child(5) {
+                background: blue;
+            }
+
+            &:nth-child(6) {
+                background: black;
+            }
+        }
+    }
+
+    &__sizes {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 8px;
+
+        button {
+            padding: 6px 10px;
+            border-radius: 20px;
+            border: none;
+            background: #eee;
+
+            &.active {
+                background: #000;
+                color: #fff;
+            }
+        }
+    }
+
+    &__apply {
+        margin-top: 15px;
+        width: 100%;
+        padding: 10px;
+        border-radius: 20px;
+        background: #000;
+        color: #fff;
+        border: none;
+    }
+
+    &__content {
+        flex: 1;
+    }
+
+    &__top {
+        display: flex;
+        justify-content: space-between;
+        margin-bottom: 20px;
+    }
+
+    &__grid {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 20px;
+    }
+
+    &__card {
+        background: #fff;
+        padding: 15px;
+        border-radius: 15px;
+        transition: 0.3s;
+        cursor: pointer;
+
+        img {
+            width: 100%;
+            border-radius: 10px;
+            margin-bottom: 10px;
+        }
+
+        &:hover {
+            transform: translateY(-8px) scale(1.02);
+            box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+        }
+
+        h4 {
+            font-size: 14px;
+            margin-bottom: 5px;
+        }
+
+        .stars {
+            font-size: 13px;
+            color: orange;
+        }
+
+        .price {
+            margin-top: 5px;
+
+            span {
+                font-weight: bold;
+            }
+
+            del {
+                color: #aaa;
+                margin-left: 5px;
+            }
+        }
+    }
+
+    &__pagination {
+        margin-top: 30px;
+        display: flex;
+        gap: 10px;
+        justify-content: center;
+
+        span,
+        button {
+            padding: 6px 12px;
+            border-radius: 10px;
+            background: #eee;
+            cursor: pointer;
+        }
+
+        .active {
+            background: #000;
+            color: #fff;
+        }
+    }
+}
+
+
+
+@media (max-width: 768px) {
+    .shop {
+
+        &__wrapper {
+            flex-direction: column;
+        }
+
+        &__sidebar {
+            width: 100%;
+        }
+
+        &__grid {
+            grid-template-columns: repeat(2, 1fr);
+        }
+
+        &__top {
+            flex-direction: column;
+            gap: 5px;
+        }
+    }
+}

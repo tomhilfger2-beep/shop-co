@@ -1,0 +1,221 @@
+.clothes {
+    &__info {
+        margin-left: 20px;
+        font-size: 40px;
+    }
+
+    &__card {
+        display: flex;
+        gap: 10px;
+
+    }
+
+
+
+    &__cards {
+        display: flex;
+        align-items: center;
+        overflow-x: auto;
+        padding: 16px;
+        scroll-behavior: smooth;
+    }
+
+    &__cards::-webkit-scrollbar {
+        display: none;
+    }
+
+
+
+    &__ViewAll {
+        padding: 13px 140px;
+        border-radius: 62px;
+        border: 1px solid gray;
+        background-color: white;
+    }
+
+    &__TOPSELLING {
+        margin-left: 30px;
+        font-size: 40px;
+    }
+
+    &__topSELLING {
+        display: none;
+    }
+
+    &__table {
+        display: none;
+    }
+
+    &__table-2 {
+        display: none;
+    }
+
+    &__hr {
+        display: none;
+    }
+
+
+    &__desktob {
+        display: none;
+    }
+
+    &__btn {
+        display: none;
+    }
+
+    &__SELLING {
+        display: none;
+    }
+
+
+}
+
+@include table() {
+    .clothes {
+        background-color: rgb(227, 227, 227);
+        border-radius: 10px;
+
+        &__cards {
+            display: none;
+        }
+
+        &__SELLING {
+            display: none;
+        }
+
+
+
+        &__ViewAll {
+            display: none;
+        }
+
+        &__info {
+            margin-left: 380px;
+            font-size: 40px;
+        }
+
+        &__clothes {
+            padding-left: 40px;
+        }
+
+        &__topSELLING {
+            display: block;
+            margin-left: 380px;
+            font-size: 40px;
+        }
+
+        &__table {
+            background-color: white;
+            border-radius: 10px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 10px;
+            padding-top: 5px;
+        }
+
+
+
+        &__table-2 {
+            background-color: white;
+            border-radius: 10px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 10px;
+            padding-top: 5px;
+        }
+
+        &__hr {
+            color: white;
+        }
+
+        &__TOPSELLING {
+            display: none;
+        }
+
+        &__desktob {
+            display: none;
+        }
+
+        &__btn {
+            display: none;
+        }
+    }
+}
+
+@include desktob() {
+    .clothes {
+        background-color: white;
+
+        &__table {
+            display: none;
+        }
+
+        &__desktob {
+            display: block;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 20px;
+        }
+
+        &__del {
+            color: gray;
+            text-decoration: line-through;
+        }
+
+        &__price {
+            display: flex;
+        }
+
+        &__hr {
+            display: none;
+        }
+
+        &__info {
+            margin-left: 440px;
+            font-size: 40px;
+        }
+
+
+        &__SELLING {
+            display: block;
+            margin-left: 450px;
+            font-size: 40px;
+        }
+
+
+        &__topSELLING {
+            display: none;
+        }
+
+        &__table-2 {
+            display: none;
+        }
+
+        &__price {
+            display: flex;
+            align-items: center;
+            gap: 4px;
+        }
+
+        &__btn {
+            padding: 15px 60px;
+            border-radius: 62px;
+            background-color: white;
+            border: 2px solid rgb(172, 169, 169);
+            margin-left: 500px;
+            top: 100px;
+
+        }
+
+        &__discount {
+            color: rgba(255, 51, 51, 1);
+            background-color: rgba(255, 51, 51, 0.1);
+            border-radius: 20px;
+            padding: 5px;
+        }
+
+    }
+}

@@ -1,0 +1,38 @@
+.brands {
+    background-color: #000;
+    padding: 40px 0;
+    position: relative;
+    bottom: 84px;
+
+    &__wrapper {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        flex-wrap: wrap;
+        gap: 30px;
+    }
+
+    &__img {
+        height: auto;
+        max-width: 150px;
+        object-fit: contain;
+        filter: brightness(0) invert(1);
+    }
+}
+
+@media (max-width: 768px) {
+    .brands {
+     
+
+        &__wrapper {
+            justify-content: center;
+            gap: 20px 40px;
+        }
+
+        &__img {
+            max-width: 100px;
+        }
+    }
+
+
+}
