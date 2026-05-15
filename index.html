@@ -41,7 +41,31 @@
 
                 <div class="shop-icons">
                     <a href="./cart.html"> <img src="./assets/imgs/Frame (1).svg" alt=""></a>
-                    <img src="./assets/imgs/Frame (2).svg" alt="">
+                </div>
+                <div class="profile">
+                    <img id="openModal" src="./assets/imgs/Frame (2).svg" alt="">
+                </div>
+                <div class="modal__body">
+                    <div class="modal" id="modal">
+                        <div class="modal-content">
+                            <span class="close" id="closeModal">&times;</span>
+
+                            <h2>SignIn to your account</h2>
+
+                            <input type="text" placeholder="Full Name" />
+                            <input type="email" placeholder="Email" /> 
+                            <input type="password" placeholder="Password" />
+
+                            <div class="bottom">
+                                <button>SUBMIT</button>
+
+                                <p>
+                                    New here ?
+                                    <a href="#">Create Account</a>
+                                </p>
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
@@ -446,23 +470,35 @@
     <script>
         AOS.init();
     </script>
-    <script>const openBtn = document.getElementById("openModal");
-const closeBtn = document.getElementById("closeModal");
-const modal = document.getElementById("loginModal");
+    <script>
+        const openModal = document.getElementById("openModal");
+        const modal = document.getElementById("modal");
+        const closeModal = document.getElementById("closeModal");
 
-openBtn.addEventListener("click", () => {
-  modal.classList.add("active");
-});
+        let isOpen = false;
 
-closeBtn.addEventListener("click", () => {
-  modal.classList.remove("active");
-});
+        openModal.addEventListener("click", () => {
+            isOpen = !isOpen;
 
-window.addEventListener("click", (e) => {
-  if (e.target === modal) {
-    modal.classList.remove("active");
-  }
-});</script>
+            if (isOpen) {
+                modal.classList.add("show");
+            } else {
+                modal.classList.remove("show");
+            }
+        });
+
+        closeModal.addEventListener("click", () => {
+            modal.classList.remove("show");
+            isOpen = false;
+        });
+
+        window.addEventListener("click", (e) => {
+            if (e.target === modal) {
+                modal.classList.remove("show");
+                isOpen = false;
+            }
+        });
+    </script>
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
 </body>
 
